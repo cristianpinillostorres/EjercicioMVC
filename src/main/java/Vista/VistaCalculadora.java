@@ -175,15 +175,16 @@ public class VistaCalculadora extends javax.swing.JFrame {
             }
         });
     }
-
+    
+  
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BT_Dividir;
-    private javax.swing.JButton BT_Multiplicar;
-    private javax.swing.JButton BT_Restar;
-    private javax.swing.JButton BT_Sumar;
-    private javax.swing.JLabel L_Resultado;
-    private javax.swing.JTextField TF_Numero1;
-    private javax.swing.JTextField TF_Numero2;
+    public javax.swing.JButton BT_Dividir;
+    public javax.swing.JButton BT_Multiplicar;
+    public javax.swing.JButton BT_Restar;
+    public javax.swing.JButton BT_Sumar;
+    public javax.swing.JLabel L_Resultado;
+    public javax.swing.JTextField TF_Numero1;
+    public javax.swing.JTextField TF_Numero2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
