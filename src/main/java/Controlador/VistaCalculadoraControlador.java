@@ -38,16 +38,9 @@ public class VistaCalculadoraControlador implements ActionListener{
      * Este metodo es el encargado de la asigacion de valores 
      * a la vista conlos datos del modelo 
      */
-    public void asignarValor(){      
-        try{  
-            modelo.setPrimerNumero((Integer.parseInt(vista.TF_Numero1.getText())));
-            modelo.setSegunndoNumero((Integer.parseInt(vista.TF_Numero2.getText())));
-            vista.TF_Numero1.setText(String.valueOf(modelo.getPrimerNumero()));
-            vista.TF_Numero2.setText(String.valueOf(modelo.getSegunndoNumero()));
-            vista.L_Resultado.setText("");
-        } catch(NumberFormatException e){
-            
-        }
+    public void iniciarVista(){
+       vista.setTitle("EJERCICIO MVC");
+       vista.setLocationRelativeTo(null);
     }
     
     /**
@@ -58,7 +51,10 @@ public class VistaCalculadoraControlador implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        
+        modelo.setPrimerNumero((Integer.parseInt(vista.TF_Numero1.getText())));
+        modelo.setSegunndoNumero((Integer.parseInt(vista.TF_Numero2.getText())));
+        
         if (e.getSource()== vista.BT_Sumar){
             vista.L_Resultado.setText(String.valueOf(modelo.sumar()));     
         }
